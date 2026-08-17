@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central de Crise - Férias do Allan</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Barra Superior -->
+    <nav>
+        <div class="nav-left">🔴 CENTRAL DE CRISE</div>
+        <div class="nav-right">● MONITORAMENTO AO VIVO</div>
+    </nav>
+
+    <main>
+        <div class="alert-badge">🚨 OCORRÊNCIA REGISTRADA — 17/08/2026</div>
+
+        <header class="profile-section">
+            <div class="photo-container">
+                <!-- A imagem vai puxar da pasta assets -->
+                <img src="assets/allan.jpeg" alt="Foto do Allan" id="allan-photo">
+                <span class="status-tag">DE FÉRIAS</span>
+            </div>
+            <div class="role">VENDEDOR DE PEÇAS • ESPECIALISTA OFICIAL</div>
+            <h1 class="main-title">ALLAN ESTÁ DE <span class="highlight">FÉRIAS</span>.</h1>
+            <p class="subtitle">«A partir de hoje, a operação de vendas de peças entra oficialmente em modo sobrevivência.»</p>
+        </header>
+
+        <!-- Contador -->
+        <section class="card countdown-card">
+            <h2>TEMPO ESTIMADO PARA O RETORNO DO ESPECIALISTA</h2>
+            <div class="timer" id="timer">
+                <div class="time-box"><span id="days">00</span><small>DIAS</small></div>
+                <span class="separator">:</span>
+                <div class="time-box"><span id="hours">00</span><small>HORAS</small></div>
+                <span class="separator">:</span>
+                <div class="time-box"><span id="minutes">00</span><small>MIN</small></div>
+                <span class="separator">:</span>
+                <div class="time-box"><span id="seconds">00</span><small>SEG</small></div>
+            </div>
+            <p class="forecast">Previsão de retorno: 01/09/2026 às 07:00</p>
+        </section>
+
+        <!-- Barra de Dependência -->
+        <section class="card dependency-card">
+            <h2>NÍVEL DE DEPENDÊNCIA DO ALLAN</h2>
+            <div class="progress-bar-container">
+                <div class="progress-bar"></div>
+                <span class="percentage">97%</span>
+            </div>
+            <p class="warning">⚠️ O sistema recomenda não perguntar "qual é o código dessa peça?" durante o período de férias.</p>
+        </section>
+
+        <!-- Painel Duplo -->
+        <div class="grid-panel">
+            <section class="card situation-card">
+                <h2>📊 SITUAÇÃO DA OPERAÇÃO</h2>
+                <ul>
+                    <li>Vendas de peças <span class="status critical">🔴 CRÍTICO</span></li>
+                    <li>"O Allan sabe" <span class="status unavailable">🔴 INDISPONÍVEL</span></li>
+                    <li>Consultas internas <span class="status elevated">🟠 ELEVADAS</span></li>
+                    <li>Esperança da equipe <span class="status hope">🔴 3%</span></li>
+                </ul>
+            </section>
+
+            <section class="card kb-card">
+                <h2>🧠 BASE DE CONHECIMENTO</h2>
+                <div class="qa">
+                    <p class="q">«"Essa peça serve nessa máquina?"»</p>
+                    <p class="a">❌ Consulte o Allan.</p>
+                </div>
+                <div class="qa">
+                    <p class="q">«"Qual é o código dela?"»</p>
+                    <p class="a">❌ Consulte o Allan.</p>
+                </div>
+                <div class="qa">
+                    <p class="q">«"Onde fica essa peça?"»</p>
+                    <p class="a">❌ Consulte o Allan.</p>
+                </div>
+                <div class="qa">
+                    <p class="q">«"Mas o Allan está onde?"»</p>
+                    <p class="a">🏖️ DE FÉRIAS.</p>
+                </div>
+            </section>
+        </div>
+
+        <!-- Frase Central -->
+        <section class="quote-section">
+            <p class="small-quote">«"Vender peça é fácil."»</p>
+            <h2 class="big-quote">Difícil é vender sem o Allan.</h2>
+            <p class="quote-author">— Relatório não-oficial da equipe</p>
+        </section>
+
+        <!-- Final da Página -->
+        <section class="card operation-card">
+            <div class="tag">OPERAÇÃO #ALLANVOLTA</div>
+            <h2>Sobreviver até setembro. 🫡</h2>
+        </section>
+    </main>
+
+    <footer>
+        <p>«Este sistema foi criado para fins de entretenimento e desespero coletivo.»</p>
+        <p>© 2026 • Central de Crise das Férias do Allan</p>
+    </footer>
+
+    <!-- Modal de Retorno (Escondido até zerar o cronômetro) -->
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <div class="celebration">🎉 🥳 🎉</div>
+            <h2>ALLAN ESTÁ DE VOLTA!</h2>
+            <p>«A operação foi normalizada.»</p>
+            <p>«As peças voltaram a fazer sentido. 🫡»</p>
+            <button id="close-modal">ENCERRAR OCORRÊNCIA</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
